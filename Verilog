@@ -1,0 +1,8 @@
+module ReLu #(
+parameter p_nbits = 16
+)(
+input [p_nbits-1:0] in,
+output [p_nbits-1:0] out
+);
+assign out=(in[15]==0)? in :0;
+endmodule
