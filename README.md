@@ -20,7 +20,11 @@ In addition to core computation, the design integrates:
 
 The system is implemented at the **Register Transfer Level (RTL)** using Verilog and follows a complete ASIC design approach, including datapath, control FSM, and memory interface.
 
-📄 Full report: [Project Report](./Layout.png)
+### Layout
+![Layout](Layout.png)
+
+### Schematic
+![Schematic](Schematic.png)
 
 ---
 
