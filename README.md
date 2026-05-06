@@ -30,7 +30,7 @@ The system is implemented at the **Register Transfer Level (RTL)** using Verilog
 ---
 
 ## Key Features
-- Matrix-vector multiplication engine
+- Matrix-vector multiplication 
 - 64-bit datapath architecture
 - Integrated ReLU activation function
 - Bit-level Sub-Word Sampling (SWS)
