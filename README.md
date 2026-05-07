@@ -3,16 +3,21 @@ ASIC Design for Matrix-Vector Computation
 # Matrix-Vector Multiplication ASIC (RTL Design)
 
 ## Overview
-This project presents the design and implementation of a custom **ASIC** for matrix-vector multiplication:
+W is an MxN array matrix and x has an Nx1 vector with 8-bit or 16-bit values; hence, the result (y) will be an Mx1 vector whose elements should be 48-bits. W and x are fetched from a memory which is not part of the ASIC.
+
+In addition to this computation, the designed ASIC should be capable of doing Sub-Word-Sampler (SWS) and ReLU function.
 
 \[
-y = Wx
+y_i' = SWS_a^b(y_i) = y_i[b:a]; \quad b \ge a.
 \]
 
-where:
-- \( W \): M×N matrix  
-- \( x \): N×1 vector  
-- \( y \): M×1 output vector (up to 48-bit precision)
+\[
+z_i = ReLU(y_i')
+\]
+
+The SWS extracts the bits of \( y_i \), located in position a to b and the ReLU function should pass positive values, otherwise, it returns zero. The sub-word fetched by the SWS function should be 8 bits or 16 bits.
+
+I implemented these two modules and instantiated them in my DataPath.v file.
 
 In addition to core computation, the design integrates:
 - **Sub-Word Sampling (SWS)**
