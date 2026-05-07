@@ -2,7 +2,7 @@
 ASIC Design for Matrix-Vector Computation
 # Matrix-Vector Multiplication ASIC (RTL Design)
 
-## Overview
+## Overview of the System
 This project implements a custom ASIC for matrix-vector multiplication:
 
 \[
