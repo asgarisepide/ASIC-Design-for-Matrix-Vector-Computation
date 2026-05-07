@@ -13,7 +13,7 @@ where:
 
 - \( W \) is an \( M × N \) matrix
 - \( x \) is an \( M × 1 \) input vector
-- \( y \) is an \( M \times 1 \) output vector
+- \( y \) is an \( M × 1 \) output vector
 
 The design supports both 8-bit and 16-bit input values, while the output vector elements are represented using 48-bit precision.
 
