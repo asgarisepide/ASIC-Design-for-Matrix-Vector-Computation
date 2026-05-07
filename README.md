@@ -11,7 +11,7 @@ y = Wx
 
 where:
 
-- \( W \) is an \( M \times N \) matrix
+- \( W \) is an \( (M × N) \) matrix
 - \( x \) is an \( N \times 1 \) input vector
 - \( y \) is an \( M \times 1 \) output vector
 
