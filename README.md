@@ -50,6 +50,6 @@ The system is implemented at the **Register Transfer Level (RTL)** using Verilog
 The datapath includes:
 - Register file (2 read / 1 write ports)
 - 64-bit multiplier and adder
-- Comparator and multiplexers
+- Comparators and multiplexers
 - SubWordSampler module
 - ReLU module
