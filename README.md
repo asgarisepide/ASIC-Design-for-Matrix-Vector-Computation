@@ -2,6 +2,7 @@
 ASIC Design for Matrix-Vector Computation
 ASIC (Application-Specific Integrated Circuit) should be designed to do Matrix-Vector multiplication, denoted as:
 y=Wx
+
 W is an MxN array matrix and x has an Nx1 vector with 8-bit or 16-bit values; hence, the result (y) will be an Mx1 vector whose elements should be 48-bits. W and x are fetched from a memory which is not part of the ASIC.
 In addition to this computation, the designed ASIC should be capable of doing Sub-Word-Sampler (SWS) and ReLU function.
 # Matrix-Vector Multiplication ASIC (RTL Design)
